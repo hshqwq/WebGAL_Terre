@@ -5,6 +5,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { ManageGameModule } from './Modules/manage-game/manage-game.module';
 import { LspModule } from './Modules/lsp/lsp.module';
+import { FFmpegModule } from './Modules/ffmpeg/ffmpeg.module';
 
 @Module({
   imports: [
@@ -21,6 +22,8 @@ import { LspModule } from './Modules/lsp/lsp.module';
       rootPath: join(process.cwd(), 'assets', 'templates', 'WebGAL_Template'),
       serveRoot: '/Games/:gamename/',
     }),
+    // ffmpeg 相关的媒体工具 APIs
+    FFmpegModule,
   ],
   controllers: [AppController],
   providers: [AppService],

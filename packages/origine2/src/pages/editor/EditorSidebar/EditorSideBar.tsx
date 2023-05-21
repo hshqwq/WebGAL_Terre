@@ -7,6 +7,7 @@ import Assets from "./SidebarTags/Assets/Assets";
 import Scenes from "./SidebarTags/Scenes/Scenes";
 import { useEffect, useRef } from "react";
 import useTrans from "@/hooks/useTrans";
+import FFmpeg from "./SidebarTags/FFmpeg/FFmpeg";
 
 
 export default function EditorSideBar() {
@@ -64,10 +65,11 @@ export default function EditorSideBar() {
         <iframe ref={ifRef} id="gamePreviewIframe" frameBorder="0" className={styles.previewWindow}
           src={`/games/${state.currentEditingGame}`} />
       </div>}
-      <div style={{height:'50%'}}>
+      <div style={{height:'100%'}}>
         {state.currentSidebarTag === sidebarTag.gameconfig && <GameConfig />}
         {state.currentSidebarTag === sidebarTag.assets && <Assets />}
         {state.currentSidebarTag === sidebarTag.scenes && <Scenes />}
+        {state.currentSidebarTag === sidebarTag.ffmpeg && <FFmpeg />}
       </div>
 
     </div>

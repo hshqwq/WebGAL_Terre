@@ -9,7 +9,8 @@ export enum sidebarTag {
   none,
   gameconfig,
   assets,
-  scenes
+  scenes,
+  ffmpeg
 }
 export enum language {
   zhCn,

@@ -4,7 +4,6 @@ import {
   CompletionList,
   TextDocument,
   CompletionItem,
-  TextDocuments,
 } from 'vscode-languageserver';
 import { getCommands } from './suggestionRules/getCommands';
 import { getArgsKey } from './suggestionRules/getArgsKey';

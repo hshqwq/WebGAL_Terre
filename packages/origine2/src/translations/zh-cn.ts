@@ -124,6 +124,18 @@ export const zhCn = {
             text: '新场景名',
           }
         }
+      },
+
+      ffmpeg: {
+        title: '媒体工厂',
+        canNotUse: '无法使用{{title}}功能',
+        file: {
+          noChoose: '未选择文件',
+          outputName: '输出文件名'
+        },
+        buttons: {
+          run: '开始执行'
+        }
       }
     },
 
